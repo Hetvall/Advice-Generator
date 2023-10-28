@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.content-box {
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 325px;
+    width: 570px;
+    max-width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.advice-id {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 5px;
+    font-size: smaller;
+    padding-top: 25px;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+}
+
+.advice-quote {
+    margin-top: -30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+.divider-line {
+    width: auto;
+    position: absolute;
+    top: 270px;
+    left: 82.45px;
+}
+
+.divider-line-mobile {
+    display: none;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 26.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submit-button {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: hsl(150, 100%, 66%);
+    filter: blur(40%);
+    box-shadow: 0 0 40px rgba(150, 295, 300, 0.8);
+}
+
+@media (max-width: 375px) {
+    .content-box {
+        width: 300px;
+        height: 360px;
+    }
+
+    .advice-quote {
+        margin-top: -45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: -70px;
+    }
+
+    .divider-line {
+        display: none;
+    }
+
+    .divider-line-mobile {
+        width: 300px;
+        display: block;
+        position: absolute;
+        bottom: 65px;
+        left: 20px;
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
