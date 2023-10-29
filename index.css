@@ -53,7 +53,7 @@ body {
 }
 
 .advice-quote {
-    margin-top: -30px;
+    margin-top: -35px;
     margin-bottom: 10px;
     padding: 10px;
     display: flex;
@@ -70,6 +70,7 @@ body {
     position: absolute;
     top: 270px;
     left: 82.45px;
+    background-image: url(/images/pattern-divider-desktop.svg);
 }
 
 .divider-line-mobile {
@@ -105,11 +106,12 @@ body {
     }
 
     .advice-quote {
-        margin-top: -40px;
+        font-size: 25px;
+        padding-top: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: -70px;
+        padding: -30px;
     }
 
     .divider-line {
@@ -120,8 +122,9 @@ body {
         width: 300px;
         display: block;
         position: absolute;
-        bottom: 65px;
+        bottom: 60px;
         left: 20px;
+        background-image: url(/images/pattern-divider-mobile.svg);
     }
 
     .button-container {
