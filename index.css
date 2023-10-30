@@ -70,7 +70,6 @@ body {
     position: absolute;
     top: 270px;
     left: 82.45px;
-    background-image: url(/images/pattern-divider-desktop.svg);
 }
 
 .divider-line-mobile {
@@ -124,7 +123,6 @@ body {
         position: absolute;
         bottom: 60px;
         left: 20px;
-        background-image: url(/images/pattern-divider-mobile.svg);
     }
 
     .button-container {
