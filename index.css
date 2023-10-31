@@ -5,18 +5,19 @@
     padding: auto;
 }
 
-.container {
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(218, 23%, 16%);
 }
 
 .content-box {
@@ -36,11 +37,6 @@ body {
     position: relative;
 }
 
-.block {
-    display: flex;
-    flex-direction: column;
-}
-
 .advice-id {
     font-family: 'Manrope', sans-serif;
     letter-spacing: 5px;
@@ -53,16 +49,16 @@ body {
 }
 
 .advice-quote {
-    margin-top: -35px;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-top: -140px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100%;
     color: hsl(193, 38%, 86%);
     font-family: 'Manrope', sans-serif;
     font-size: 28px;
+    padding: 10px;
 }
 
 .divider-line {
@@ -76,20 +72,14 @@ body {
     display: none;
 }
 
-.button-container {
-    position: absolute;
-    bottom: 26.5%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .submit-button {
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
+    padding: 18px;    
+    margin-top: 360px;
     cursor: pointer;
-    width: 70px;
-    height: 70px;
     border: none;
+    position: absolute;
 }
 
 .submit-button:hover {
@@ -110,7 +100,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: -30px;
+        margin-top: -120px;
     }
 
     .divider-line {
@@ -121,14 +111,17 @@ body {
         width: 300px;
         display: block;
         position: absolute;
-        bottom: 60px;
+        bottom: 70px;
         left: 20px;
     }
 
-    .button-container {
+    .submit-button {
+        background-color: hsl(150, 100%, 66%);
+        border-radius: 50%;
+        padding: 18px;    
+        margin-top: 390px;
+        cursor: pointer;
+        border: none;
         position: absolute;
-        bottom: 23%;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }

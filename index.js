@@ -20,3 +20,9 @@ button.addEventListener("click", async () => {
   adviceQuote.textContent = `“${advice}”`;
   adviceID.textContent = `ADVICE # ${id}`;
 });
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const { id, advice } = await getRandomAdvise();
+  adviceQuote.textContent = `“${advice}”`;
+  adviceID.textContent = `ADVICE # ${id}`;
+});
